@@ -16,11 +16,11 @@ class calcWindow(QMainWindow):
         self.initUI()
 
     def initUI(self):
-       self.setWindowIcon(QIcon(os.path.abspath('Calc.ico'))) 
-       qr = self.frameGeometry()
-       cp = QDesktopWidget().availableGeometry().center()
-       qr.moveCenter(cp)
-       self.move(qr.topLeft())
+        self.setWindowIcon(QIcon(os.path.abspath('Calc.ico'))) 
+        qr = self.frameGeometry()
+        cp = QDesktopWidget().availableGeometry().center()
+        qr.moveCenter(cp)
+        self.move(qr.topLeft())
         
     def setOperations(self):
         self.ui.num1.clicked.connect(self.updateDisplay)
